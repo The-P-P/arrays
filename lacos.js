@@ -54,3 +54,35 @@ for (let notas of notasy) {
 const mediay = somasy / notasy.length;
 
 console.log(mediay)
+
+//for each
+const notasz = [10, 6.5, 8, 7.5];
+let somasz = 0;
+notasz.forEach((nota, indice) => {
+    somasz += nota
+    console.log(indice)
+});
+
+const mediaz = somasz / notasz.length;
+
+console.log(mediaz)
+
+//map
+
+const notasc = [ 10, 9.5, 8, 7, 6]
+
+const notasA = notasc.map((nota) => {
+    return nota +1 >= 10 ? 10 : nota + 1;
+
+})
+
+console.log(notasA)
+
+const nomes = ['pedro', 'luis', 'lucas']
+
+const nomesp = nomes.map((nome) => {
+    return nome.toUpperCase();
+
+})
+
+console.log(nomesp)
