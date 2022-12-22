@@ -31,7 +31,7 @@ console.log(`A média da sala de Python é ${calculaMedia(salaPython)}`);
 
 const notas = [7, 7, 8, 9];
 
-const novasNotas = [...notas, 10];   //spread operator => copia os valores de um array para uma nova lista sem alterar a lista original
+const novasNotas = [...notas, 10];   //spread operator (...) => copia os valores de um array para uma nova lista sem alterar a lista original
 
 console.log(`As novas notas são ${novasNotas}`);
 console.log(`As notas originais são ${notas}`);
@@ -41,6 +41,6 @@ console.log(`As notas originais são ${notas}`);
 
 const nomes = ["Ana", "Clara", "Maria", "Maria", "João", "João", "João"];
 
-const nomesAtualizados = [...new Set(nomes)];  // elimina valores duplicados
+const nomesAtualizados = [...new Set(nomes)];  // set => elimina valores duplicados
 
 console.log(nomesAtualizados);
